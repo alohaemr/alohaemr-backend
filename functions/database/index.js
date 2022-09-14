@@ -1,11 +1,15 @@
 const {initializeApp, cert} = require("firebase-admin/app");
 const serviceAccount = require("../credentials/service-account-key.json");
 const {getFirestore} = require("firebase-admin/firestore");
+const {getAuth} = require("firebase-admin/auth");
+
 const app = initializeApp({
   credential: cert(serviceAccount),
 });
 
 const firestore = getFirestore(app);
+const auth = getAuth(app);
+
 const COLLECTIONS = {
   CLINICS: "clinics",
   PATIENTS: "patients",
@@ -13,4 +17,5 @@ const COLLECTIONS = {
   USERS: "userAccess",
   ENCOUNTER: "encounters",
 };
-module.exports = {firestore, COLLECTIONS};
+
+module.exports = {firestore, auth, COLLECTIONS};

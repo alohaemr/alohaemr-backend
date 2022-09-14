@@ -1,2 +1,4 @@
 exports.getUser = require("./user/get");
-exports.createUser = require("./user/create");
+
+exports.createStaff = require("./staff/create");
+exports.editStaff = require("./staff/edit");
