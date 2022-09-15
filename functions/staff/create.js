@@ -31,8 +31,9 @@ const createStaff = functions.https.onCall(async (data) => {
       firstName,
       lastName,
       role,
-      password,
+      disabled: false,
       deletedAt: null,
+      updatedAt: null,
       createdAt: FieldValue.serverTimestamp(),
     };
     await userRef.set(userBody);
