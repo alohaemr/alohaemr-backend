@@ -33,11 +33,15 @@ const createStaff = functions.https.onCall(async (data) => {
       role,
       disabled: false,
       deletedAt: null,
-      updatedAt: null,
+      updatedAt: FieldValue.serverTimestamp(),
       createdAt: FieldValue.serverTimestamp(),
     };
     await userRef.set(userBody);
-    return {id: uid, ...userBody, createdAt: getISODate()};
+    return {
+      id: uid, ...userBody,
+      createdAt: getISODate(),
+      updatedAt: getISODate(),
+    };
   } catch (e) {
     return e;
   }

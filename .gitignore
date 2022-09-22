@@ -69,3 +69,5 @@ functions/node_modules/
 
 ui-debug.log
 functions/credentials
+
+functions/firebase-export

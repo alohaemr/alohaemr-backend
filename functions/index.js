@@ -1,3 +1,4 @@
+exports.editUser = require("./user/edit");
 exports.editCredentials = require("./user/edit-credentials");
 
 exports.createStaff = require("./staff/create");

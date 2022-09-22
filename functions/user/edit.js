@@ -7,7 +7,7 @@ const getISODate = () => {
   return new Date().toISOString();
 };
 
-const editStaff = functions.https.onCall(async (data) => {
+const editUser = functions.https.onCall(async (data) => {
   try {
     const {id} = data || {};
     const userBody = pick(data, [
@@ -29,11 +29,10 @@ const editStaff = functions.https.onCall(async (data) => {
       ...userBody,
       updatedAt: FieldValue.serverTimestamp(),
     }, {merge: true});
-
     return {id, ...userBody, updatedAt: getISODate()};
   } catch (e) {
     return e;
   }
 });
 
-module.exports = editStaff;
+module.exports = editUser;
