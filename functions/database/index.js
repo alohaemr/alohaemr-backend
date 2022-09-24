@@ -18,4 +18,15 @@ const COLLECTIONS = {
   ENCOUNTER: "encounters",
 };
 
-module.exports = {firestore, auth, COLLECTIONS};
+const ROLE_KEYS = {
+  SUPER_ADMIN: "SuperAdmin",
+  ROOT_ADMIN: "RootAdmin",
+  ADMIN: "Admin",
+  MANAGER: "Manager",
+  PROVIDER: "Provider",
+  STAFF: "Staff",
+  RECEPTIONIST: "Receptionist",
+};
+
+
+module.exports = {firestore, auth, COLLECTIONS, ROLE_KEYS};
