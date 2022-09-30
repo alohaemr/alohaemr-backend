@@ -16,6 +16,11 @@ const COLLECTIONS = {
   CLIENTS: "clients",
   USERS: "userAccess",
   ENCOUNTER: "encounters",
+  CERTIFICATION_TYPES: "certification-types",
+  CERTIFICATION: "certifications",
+  MASTER_MEDICATIONS: "master-medications",
+  MASTER_TASKS: "master-tasks",
+  MASTER_IMAGING: "master-imaging",
 };
 
 const ROLE_KEYS = {
