@@ -15,6 +15,7 @@ const COLLECTIONS = {
   PATIENTS: "patients",
   CLIENTS: "clients",
   USERS: "userAccess",
+  MESSAGES: "messages",
   ENCOUNTER: "encounters",
 };
 

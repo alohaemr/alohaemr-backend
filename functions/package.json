@@ -17,9 +17,12 @@
   },
   "main": "index.js",
   "dependencies": {
+    "axios": "^0.26.1",
+    "dotenv": "^16.0.3",
     "firebase-admin": "^10.0.2",
-    "firebase-functions": "^3.18.0",
-    "lodash": "^4.17.21"
+    "firebase-functions": "^3.24.1",
+    "lodash": "^4.17.21",
+    "twilio": "^3.82.1"
   },
   "devDependencies": {
     "eslint": "8.22.0",
