@@ -45,21 +45,3 @@ module.exports = {
   getAllMessages,
   sendMessageByNumber
 }
-
-    //   const auth = {
-    //       username: 'AC51245cf2d8ea15acf5d223176ed9ef4f',
-    //       password: '356912cf13b349afd528c7b01dfe45b8'
-    //     }
-  // axios({
-  //   url: `https://api.twilio.com/2010-04-01/Accounts/AC51245cf2d8ea15acf5d223176ed9ef4f/Messages.json?From=%2B18145594905&To=%2B19783969698`,
-  //   method: 'GET',
-  //   auth: {
-  //     username: 'AC51245cf2d8ea15acf5d223176ed9ef4f',
-  //     password: '356912cf13b349afd528c7b01dfe45b8'
-  //   }
-  // }).then((response) => {
-  //   console.log("respose", response.data.messages)
-  //   setData((response.data.messages).reverse())
-  //   scrollToBottom()
-
-  // })
