@@ -8,12 +8,13 @@ module.exports = {
     "ecmaVersion": 2019,
     "sourceType": "module",
   },
-  extends: [
-    "eslint:recommended",
-    "google",
-  ],
+  // extends: [
+  //   "eslint:recommended",
+  //   "google",
+  // ],
   rules: {
     "quotes": ["error", "double"],
     "no-empty": "off",
+    "linebreak-style": 0,
   },
 };
